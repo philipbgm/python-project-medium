@@ -12,11 +12,11 @@ lint-mypy:
 	@mypy .
 
 unit-tests:
-	@pytest
+	@pytest --doctest-modules
 unit-tests-cov:
-	@pytest --cov=src --cov-report term-missing --cov-report=html
+	@pytest --doctest-modules --cache-clear --cov=src --cov-report term-missing --cov-report=html
 unit-tests-cov-fail:
-	@pytest --cov=src --cov-report term-missing --cov-report=html --cov-fail-under=80 --junitxml=pytest.xml | tee pytest-coverage.txt
+	@pytest --doctest-modules --cache-clear --cov=src --cov-report term-missing --cov-report=html --cov-fail-under=80 --junitxml=pytest.xml | tee pytest-coverage.txt
 clean-cov:
 	@rm -rf .coverage
 	@rm -rf htmlcov
@@ -33,6 +33,7 @@ docs-deploy: ## build & deploy documentation to "gh-pages" branch
 
 clean-docs: ## remove output files from mkdocs
    @rm -rf site
+
 
 format: format-black
 
