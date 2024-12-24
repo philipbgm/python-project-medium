@@ -7,4 +7,5 @@
 # philipbgm-python-project-medium
 Python Project course from Medium
 
+Updated version of 12/2024
 Original source: https://github.com/johschmidt42/python-project-johannes
