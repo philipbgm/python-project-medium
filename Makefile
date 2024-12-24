@@ -46,4 +46,4 @@ current-version: ## returns the current version
 	@semantic-release version --print
 
 publish-noop: ## publish command (no-operation mode)
-	@semantic-release publish --noop
+	@semantic-release --noop publish
