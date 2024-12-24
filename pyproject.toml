@@ -15,11 +15,18 @@ httpx = "^0.28.1"
 fastapi = "^0.115.6"
 uvicorn = {extras = ["standard"], version = "^0.34.0"}
 
-
 [tool.poetry.group.lint.dependencies]
 flake8 = "^7.1.1"
 black = "^24.10.0"
 
+[tool.poetry.group.test.dependencies]
+pytest-cov = "^6.0.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.coverage.report]
+exclude_lines = [
+    'if __name__ == "__main__":'
+]
