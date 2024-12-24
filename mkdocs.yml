@@ -1,0 +1,27 @@
+site_name: Python Project Medium
+
+theme:
+  name: "material"
+  feature:
+    - navigation.instant
+
+docs_dir: docs
+
+nav:
+  - Index Page: index.md
+  - Tutorials: tutorials.md
+  - How-To-Guides: how-to-guides.md
+  - Reference: reference.md
+  - Explanation: explanation.md
+
+# to navigate with `/site` content correctly
+use_directory_urls: false
+
+plugins:
+- search:
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [src]
+
+repo_url: https://philipbgm.github.io/python-project-medium/

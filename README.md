@@ -3,3 +3,5 @@
 
 # philipbgm-python-project-medium
 Python Project course from Medium
+
+Original source: https://github.com/johschmidt42/python-project-johannes
