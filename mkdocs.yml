@@ -1,0 +1,16 @@
+site_name: Python Project Medium
+
+theme:
+  name: "material"
+
+docs_dir: docs
+
+nav:
+  - Index Page: index.md
+  - Tutorials: tutorials.md
+  - How-To-Guides: how-to-guides.md
+  - Reference: reference.md
+  - Explanation: explanation.md
+
+# to navigate with `/site` content correctly
+use_directory_urls: false
