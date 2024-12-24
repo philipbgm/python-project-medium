@@ -11,6 +11,12 @@ lint-flake8:
 lint-mypy:
 	@mypy .
 
+format: format-black
+
+lint: lint-black lint-flake8
+
+
+##@ Tests
 unit-tests:
 	@pytest --doctest-modules
 unit-tests-cov:
@@ -35,6 +41,9 @@ clean-docs: ## remove output files from mkdocs
 	@rm -rf site
 
 
-format: format-black
+##@ Releases
+current-version: ## returns the current version
+	@semantic-release version --print
 
-lint: lint-black lint-flake8
+publish-noop: ## publish command (no-operation mode)
+	@semantic-release publish --noop
