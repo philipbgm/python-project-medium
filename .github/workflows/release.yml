@@ -40,15 +40,15 @@ jobs:
         run: poetry install --only semver
       # semantic release
       - name: Python Semantic Release
-        # uses: python-semantic-release/python-semantic-release@master
-        # with:
-        #     github_token: ${{ secrets.GITHUB_TOKEN }}
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: |
-          set -o pipefail
-          # Set git details
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          # run semantic-release
-          poetry run semantic-release publish
+        uses: python-semantic-release/python-semantic-release@master
+        with:
+            github_token: ${{ secrets.GH_TOKEN }}
+        # env:
+        #   GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        # run: |
+        #   set -o pipefail
+        #   # Set git details
+        #   git config --global user.name "github-actions"
+        #   git config --global user.email "github-actions@github.com"
+        #   # run semantic-release
+        #   poetry run semantic-release publish
