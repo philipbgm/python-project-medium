@@ -51,7 +51,7 @@ addopts = "-p no:cacheprovider" # deactivating pytest caching.
 
 [tool.semantic_release]
 branch = "main"
-version_variable = ["src/example_app/__init__.py:__version__"]
+version_variables = ["src/example_app/__init__.py:__version__"]
 version_toml = ["pyproject.toml:tool.poetry.version"]
 version_source = "tag"
 commit_version_number = true # required for version_source = "tag"
