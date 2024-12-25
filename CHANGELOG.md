@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.3.0 (2024-12-25)
+
+### Features
+
+- Docker
+  ([`b2c6728`](https://github.com/philipbgm/python-project-medium/commit/b2c67281ca0a0d10f1a703cb26ee6856e6a32372))
+
+
 ## v0.2.1 (2024-12-25)
 
 ### Bug Fixes
