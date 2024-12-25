@@ -1,6 +1,14 @@
 # CHANGELOG
 
 
+## v0.2.1 (2024-12-25)
+
+### Bug Fixes
+
+- Change release config
+  ([`a7797a1`](https://github.com/philipbgm/python-project-medium/commit/a7797a1e525bd655b809df66ae62158c16dd8f00))
+
+
 ## v0.2.0 (2024-12-25)
 
 ### Bug Fixes
